@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Create a  function to convert 24 hr time to 12hr time
+       
+
+
+        let today=new Date()
+        let  hrs=today.getHours()
+        function con(){
+       if(hrs>12){
+        console.log(hrs-12)
+       }
+       else{
+        console.log(hrs)
+       }
+        }
+        con()
+
+        // create a function to generate the otp of 6 digits
+    
+
+
+function otp(){
+    console.log((Math.random()*1000000).toFixed())
+}
+otp()
+
+
+
+
+
+
+
+
+
+
+
+
+// based on the number create a function to return day of the week
+
+let todays=new Date
+let name=today.getDay
+function days(day){
+    if(day===1){
+        console.log("monday")
+    }
+    else if(day===2){
+        console.log("tuesday")
+    }
+   else  if(day===3){
+        console.log("wednesday")
+    }
+    else if(day===4){
+        console.log("thursday")
+    }
+    else if(day===5){
+        console.log("friday")
+    }
+    else if(day===6){
+        console.log("saturday")
+    }
+    else if(day===0){
+        console.log("sunday")
+    }
+    else{
+        console.log("not a day")
+    }
+}
+days(3)
+
+
+
+
+    </script>
+</body>
+</html>
